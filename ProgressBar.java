@@ -26,9 +26,9 @@ class ProgressBar extends JFrame
 		 JF.add(JP);
 		 
 		 //screen size
-		 Dimension d=Toolkit.getDefaultToolkit().getScreenSize();
-		 SCRN_WIDTH=(int)d.getWidth();
-		 SCRN_HEIGHT=(int)d.getHeight();
+		//  Dimension d=Toolkit.getDefaultToolkit().getScreenSize();
+		 SCRN_WIDTH=1366;
+		 SCRN_HEIGHT=768;
 
 		 
 		 //label of brand & lable or position of bucket on progress bar
@@ -73,7 +73,7 @@ class ProgressBar extends JFrame
 				{
 				t.stop();
 				 new Home();
-				JF.dispose();
+				 JF.dispose();
 				}
 			}
 		} 

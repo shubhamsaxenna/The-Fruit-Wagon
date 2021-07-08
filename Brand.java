@@ -32,12 +32,12 @@ class Brand extends JFrame
 	 
 	 //screen size
 	 Dimension d=Toolkit.getDefaultToolkit().getScreenSize();
-	 SCRN_WIDTH=(int)d.getWidth();
-	 SCRN_HEIGHT=(int)d.getHeight();
+	 SCRN_WIDTH=1366;
+	 SCRN_HEIGHT=768;
 	 
 	 //label of brand 
 	 JLabel JLABEL=new JLabel(new ImageIcon("image/jgame.gif"));
-	 JLABEL.setBounds(330,250,740,140);
+	 JLABEL.setBounds(SCRN_WIDTH/2-400, SCRN_HEIGHT/2-180, 840, 240);
 	 
 	 //progress bar
 	 JP_BAR=new JProgressBar();
@@ -54,6 +54,7 @@ class Brand extends JFrame
 	 setVisible(true);
 	 t=new Timer(200,new MyListener());
 	 t.start();
+
 	}
 	
 	

@@ -18,9 +18,9 @@ class EnterName
 	JFrame ENTER_FRAME;
 	JPanel PANEL;
 	
-	Dimension d=Toolkit.getDefaultToolkit().getScreenSize();
-	int SCRN_WIDTH=(int)d.getWidth();
-	int SCRN_HEIGHT=(int)d.getHeight();
+	// Dimension d=Toolkit.getDefaultToolkit().getScreenSize();
+	int SCRN_WIDTH=1366;
+	int SCRN_HEIGHT=768;
 	
 
 		//It is the first frame. It get the username.

@@ -36,9 +36,9 @@ class Home
 	String PLAYER_DATA[][] = new String[10][3];
 	String column[]= {"Rank","Name","Score"};	
 	//screen size
-	 Dimension d=Toolkit.getDefaultToolkit().getScreenSize();
-	 int Scrn_WIDTH=(int)d.getWidth();
-	 int Scrn_HEIGHT=(int)d.getHeight();
+	//  Dimension d=Toolkit.getDefaultToolkit().getScreenSize();
+	 int Scrn_WIDTH=1366;
+	 int Scrn_HEIGHT=768;
 
 
 	//connecting to database.

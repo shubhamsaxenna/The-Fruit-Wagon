@@ -47,9 +47,9 @@ class Stages
 	String IMG_ARRAY[]={"image/ora.png","image/nim.png","image/apple.png","image/str.png"};
 
         
-	Dimension d=Toolkit.getDefaultToolkit().getScreenSize();
-	int SCRN_WIDTH=(int)d.getWidth();
-	int SCRN_HEIGHT=(int)d.getHeight();
+	// Dimension d=Toolkit.getDefaultToolkit().getScreenSize();
+	int SCRN_WIDTH=1366;
+	int SCRN_HEIGHT=768;
 	
 	ResultSet rs;
 	PreparedStatement ps;
@@ -131,7 +131,7 @@ class Stages
 		if(LVL_NUM==1)	//if len==0 means there is no int & the level loaded is level 1.
 		{
 			STAGE_NUM.setIcon(new ImageIcon("image/1.png"));
-			TIMER_LEVELNAME=new Timer(500,new startLoad());
+			TIMER_LEVELNAME=new Timer(1000,new startLoad());
 			TIMER_LEVELNAME.start();			
 		}
 		if(LVL_NUM==2)
@@ -294,7 +294,7 @@ class Stages
 		FRUIT_TIMER_1.start();
 		FRUIT_TIMER_2.start();
 			
-		PLAY_TIME=new Timer(9,new watchLevel());
+		PLAY_TIME=new Timer(500,new watchLevel());
 		PLAY_TIME.start();
 		GAME_FRAME.addKeyListener(new stageEsc());
 	}

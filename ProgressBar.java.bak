@@ -8,7 +8,7 @@ class ProgressBar extends JFrame
 {
 	JProgressBar JP_BAR;
 	JLabel JLABEL,JLABEL_BACKGRND;
-	AudioStream AUDIO;
+	
     int SCRN_WIDTH,SCRN_HEIGHT;
     Timer t; 
     JFrame JF=new JFrame();	
@@ -56,7 +56,7 @@ class ProgressBar extends JFrame
 		 JF.setVisible(true);
 		 t=new Timer(100,new MyListener());
 		 t.start();
-		 song();
+	
 		}
 
 	public class MyListener implements ActionListener
@@ -72,27 +72,12 @@ class ProgressBar extends JFrame
 			if(val>=100)
 				{
 				t.stop();
-				 new Home();
-				JF.dispose();
+				 //new Home();
+				 //JF.dispose();
 				}
 			}
 		} 
 
-	public void song()
-		   {
-	      try
-		    {
-		     String SONG_FILE = "sound/background.wav";
-		     InputStream IN = new FileInputStream(SONG_FILE);
-             AUDIO = new AudioStream(IN);
-			 AudioPlayer.player.start(AUDIO);
-			}
-		  catch(Exception e)
-			{
-				System.out.println(e);
-			}
-	     }	
-	
 	public static void main(String[] args) 
 	{
 		new ProgressBar();
